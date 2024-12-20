@@ -10,26 +10,22 @@
 
 <div class="container">
     <h1>My Wishlist</h1>
+    
+    <img src="/img/img1.jpg" alt="Minu pilt" style="max-width: 200px; margin-bottom: 20px;">
+
     <form action="/wish" method="POST">
         <input type="text" name="userWish" placeholder="add a wish">
         <button type="submit">Add a wish</button>
     </form>
 
     <div class="Wishlist">
-<ul>
-    <% for(let i = 0; i < myWishes.length; i++ ){ %>
-        <li> <%= myWishes[i].description %> </li>
-        <% } %>
-
-    
-</ul>
+        <ul>
+            <% for(let i = 0; i < myWishes.length; i++ ){ %>
+                <li><%= myWishes[i].description %></li>
+            <% } %>
+        </ul>
     </div>
-
-
-
 </div>
 
-
-    
 </body>
 </html>
